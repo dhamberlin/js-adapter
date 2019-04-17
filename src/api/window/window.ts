@@ -506,7 +506,7 @@ export class _Window extends EmitterBase<WindowEvents> {
                 } else {
                     reject(pageResolve);
                 }
-            });
+            }).catch(reject);
         });
     }
 
